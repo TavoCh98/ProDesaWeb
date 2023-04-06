@@ -4,12 +4,10 @@ import com.PruebaProyecto.dao.UsuariosDao;
 import com.PruebaProyecto.domain.Usuarios;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- *
- * @author 0116960839$
- */
+@Service
 public class UsuariosServiceImpl implements UsuariosService {
 
     @Autowired
