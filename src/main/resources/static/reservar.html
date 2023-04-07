@@ -6,215 +6,293 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="head">
+            <nav>
+                <a href="index.html"><img src="Images/logo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="turismo.html">TOUR</a></li>
+                        <li><a href="paquetesTurismo.html">PAQUETES DE TURISMO</a></li>
+                        <li><a href="infoPersonal.html">INFORMACIÓN</a></li>
+                        <li><a href="inicioSesion.html">INICIO SESIÓN</a></li>
+                        <li><a href="reservar.html">RESERVACIÓN</a></li>
+                        <li><a href="">CHAT DE AYUDA</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="contenedor">
             <h2>Reservar</h2>
-             <form action="">
-                    <div class="usuario">
-                        <input type="text" name="tour" value="Reserva 1 Día" style="display: none">
-                        <p style="color: #fff">Nombre<span style="color: red">*</span></p>
-                        <div class="form-group">
-                            <input class="form-control" type="text" name="nombre" required="">
-                        </div>
-                        <p style="color: #fff">Teléfono</p>
-                        <div class="form-group">
-                            <input class="form-control" type="text" name="tel">
-                        </div>
-                        <p style="color: #fff">Cantidad de personas</p>
-                        <div class="form-group">
-                            <input class="form-control" type="number" name="personas" min="2" placeholder="Mínimo de 2 personas">
-                        </div>
+            <form action="">
+                <div class="usuario">
+                    <input type="text" name="tour" value="Reserva 1 Día" style="display: none">
+                    <p style="color: #fff">Nombre<span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="nombre" required="">
                     </div>
-                    <div class="usuario">
-                        <p style="color: #fff">Fecha <span style="color: red">*</span></p>
-                        <div class="form-group">
-                            <input class="form-control" type="date" name="fecha" required="">
-                        </div>
-                        <p style="color: #fff">Correo electrónico <span style="color: red">*</span></p>
-                        <div class="form-group">
-                            <input class="form-control" type="email" name="email" required="">
-                        </div>
-                        <p style="color: #fff">Confirmar correo electrónico <span style="color: red">*</span></p>
-                        <div class="form-group">
-                            <input class="form-control" type="email" name="repetir_email" required="">
-                        </div>
-                        <a href="">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Reservar
-                                </a>
+                    <p style="color: #fff">Teléfono</p>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="tel">
+                    </div>
+                    <p style="color: #fff">Cantidad de personas</p>
+                    <div class="form-group">
+                        <input class="form-control" type="number" name="personas" min="2" placeholder="Mínimo de 2 personas">
                     </div>
                 </div>
-        
-            </form>
+                <div class="usuario">
+                    <p style="color: #fff">Fecha <span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="date" name="fecha" required="">
+                    </div>
+                    <p style="color: #fff">Correo electrónico <span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" required="">
+                    </div>
+                    <p style="color: #fff">Confirmar correo electrónico <span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="repetir_email" required="">
+                    </div>
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Reservar
+                    </a>
+                </div>
         </div>
-        <style>
-            html{
-                height: 100%;
-            }
-            body{
-                margin: 0;
-                padding: 0;
-                background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/banner5.jpg);
-                background-size: cover;
-                
-            }
-            .contenedor{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 400px;
-                padding: 40px;
-                transform: translate(-50%, -50%);
-                background: rgba(0, 0, 0, .5);
-                box-sizing: border-box;
-                box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-                border-radius: 10px;
-            }
 
-            .contenedor h2{
-                margin: 0 0 30px;
-                padding: 0;
-                color: #fff;
-                text-align: center;
-            }
+    </form>
+</div>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/banner5.jpg);
+        background-size: cover;
 
-            .contenedor .usuario{
-                position: relative;
-            }
+    }
+    .contenedor{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, .5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+    }
 
-            .contenedor .usuario input{
-                width: 100%;
-                padding: 10px 0;
-                font-size: 16px;
-                color: #fff;
-                margin-bottom: 30px;
-                border: none;
-                border-bottom: 1px solid #fff;
-                outline: none;
-                background: transparent;
-            }
+    .contenedor h2{
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
 
-            .contenedor .usuario label{
-                position: absolute;
-                top: 0;
-                left: 0;
-                padding: 10px 0;
-                font-size: 16px;
-                color: #fff;
-                pointer-events: none;
-                transition: .5s;
-            }
+    .contenedor .usuario{
+        position: relative;
+    }
 
-            .contenedor .usuario input:focus ~ label,
-            .contenedor .usuario input:valid ~ label{
-                top: -20px;
-                left: 0;
-                color: #55735e;
-                font-size: 12px;
-            }
+    .contenedor .usuario input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
 
-            .contenedor form a {
-                position: relative;
-                display: inline-block;
-                padding: 10px 20px;
-                color: #55735e;
-                font-size: 16px;
-                text-decoration: none;
-                text-transform: uppercase;
-                overflow: hidden;
-                transition: .5s;
-                margin-top: 40px;
-                letter-spacing: 4px;
-            }
+    .contenedor .usuario label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+    }
 
-            .contenedor a:hover{
-                background: #55735e;
-                color: #fff;
-                border-radius: 5px;
-                box-shadow: 0 0 5px #55735e,
-                    0 0 25px #55735e,
-                    0 0 50px #55735e,
-                    0 0 100px #55735e;
-            }
+    .contenedor .usuario input:focus ~ label,
+    .contenedor .usuario input:valid ~ label{
+        top: -20px;
+        left: 0;
+        color: #55735e;
+        font-size: 12px;
+    }
 
-            .contenedor a span{
-                position: absolute;
-                display: block;
-            }
+    .contenedor form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #55735e;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
 
-            .contenedor a span:nth-child(1){
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 2px;
-                background: linear-gradient(90deg, transparent,#55735e);
-                animation: btn-anim1 1s linear infinite;
-            }
-            @keyframes btn-anim1{
-                0%{
-                    left: -100%;
-                }
-                50%, 100% {
-                    left: 100%;
-                }
-            }
+    .contenedor a:hover{
+        background: #55735e;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #55735e,
+            0 0 25px #55735e,
+            0 0 50px #55735e,
+            0 0 100px #55735e;
+    }
 
-            .contenedor a span:nth-child(2){
-                top: -100%;
-                right: 0;
-                width: 2px;
-                height: 100%;
-                background: linear-gradient(180deg, transparent,#55735e);
-                animation: btn-anim2 1s linear infinite;
-                animation-delay: .25s;
-            }
-            @keyframes btn-anim2{
-                0%{
-                    top: -100%;
-                }
-                50%, 100% {
-                    top: 100%;
-                }
-            }
+    .contenedor a span{
+        position: absolute;
+        display: block;
+    }
 
-            .contenedor a span:nth-child(3){
-                right: -100%;
-                bottom: 0;
-                width: 100%;
-                height: 2px;
-                background: linear-gradient(270deg, transparent,#55735e);
-                animation: btn-anim3 1s linear infinite;
-                animation-delay: .5s;
-            }
-            @keyframes btn-anim3{
-                0%{
-                    right: -100%;
-                }
-                50%, 100% {
-                    right: 100%;
-                }
-            }
+    .contenedor a span:nth-child(1){
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent,#55735e);
+        animation: btn-anim1 1s linear infinite;
+    }
+    @keyframes btn-anim1{
+        0%{
+            left: -100%;
+        }
+        50%, 100% {
+            left: 100%;
+        }
+    }
 
-            .contenedor a span:nth-child(4){
-                bottom: -100%;
-                left: 0;
-                width: 2px;
-                height: 100%;
-                background: linear-gradient(270deg, transparent,#55735e);
-                animation: btn-anim4 1s linear infinite;
-                animation-delay: .75s;
-            }
-            @keyframes btn-anim4{
-                0%{
-                    bottom: -100%;
-                }
-                50%, 100% {
-                    bottom: 100%;
-                }
-            }
+    .contenedor a span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent,#55735e);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: .25s;
+    }
+    @keyframes btn-anim2{
+        0%{
+            top: -100%;
+        }
+        50%, 100% {
+            top: 100%;
+        }
+    }
 
-        </style> 
-    </body>
+    .contenedor a span:nth-child(3){
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent,#55735e);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s;
+    }
+    @keyframes btn-anim3{
+        0%{
+            right: -100%;
+        }
+        50%, 100% {
+            right: 100%;
+        }
+    }
+
+    .contenedor a span:nth-child(4){
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(270deg, transparent,#55735e);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: .75s;
+    }
+    @keyframes btn-anim4{
+        0%{
+            bottom: -100%;
+        }
+        50%, 100% {
+            bottom: 100%;
+        }
+    }
+    .head{
+        min-height: 100vh;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        width: 140px;
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .nav-links ul li::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: aliceblue;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    .nav-links .btnLogin-popup{
+        width: 125px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid burlywood;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 40px;
+        transition: .5s;
+    }
+    .nav-links .btnLogin-popup:hover{
+        background: burlywood;
+        color: #fff;
+    }
+
+
+</style> 
+</body>
 </html>
