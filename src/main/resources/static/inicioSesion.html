@@ -7,6 +7,22 @@
         <title>Inicio de Sesion</title>
     </head>
     <body>
+        <div class="head">
+            <nav>
+                <a href="index.html"><img src="Images/logo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="turismo.html">TOUR</a></li>
+                        <li><a href="paquetesTurismo.html">PAQUETES DE TURISMO</a></li>
+                        <li><a href="infoPersonal.html">INFORMACIÓN</a></li>
+                        <li><a href="inicioSesion.html">INICIO SESIÓN</a></li>
+                        <li><a href="reservar.html">RESERVACIÓN</a></li>
+                        <li><a href="">CHAT DE AYUDA</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="contenedor">
             <h2>Inicio de Sesión</h2>
             <form action="">
@@ -18,12 +34,19 @@
                     <input type="password" required="">
                     <label>Contraseña</label>
                 </div>
-                <a href="">
+                <a href="inicioSesion.html">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     Iniciar
+                </a>
+                <a href="registro.html">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Registrar
                 </a>
             </form>
         </div>
@@ -47,6 +70,7 @@
                 box-sizing: border-box;
                 box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
                 border-radius: 10px;
+                
             }
 
             .contenedor h2{
@@ -89,6 +113,7 @@
                 left: 0;
                 color: #55735e;
                 font-size: 12px;
+                
             }
 
             .contenedor form a {
@@ -103,6 +128,8 @@
                 transition: .5s;
                 margin-top: 40px;
                 letter-spacing: 4px;
+                justify-content: space-between;
+                
             }
 
             .contenedor a:hover{
@@ -113,11 +140,13 @@
                     0 0 25px #55735e,
                     0 0 50px #55735e,
                     0 0 100px #55735e;
+                
             }
 
             .contenedor a span{
                 position: absolute;
                 display: block;
+                
             }
 
             .contenedor a span:nth-child(1){
@@ -190,7 +219,69 @@
                     bottom: 100%;
                 }
             }
+            .head{
+                min-height: 100vh;
+                width: 100%;
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav img{
+                width: 140px;
+                position: absolute;
+                top: 4%;
+                left: 10%;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .nav-links ul li::after{
+                content: "";
+                width: 0%;
+                height: 2px;
+                background: aliceblue;
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%;
+            }
+            .nav-links .btnLogin-popup{
+                width: 125px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid burlywood;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1.1em;
+                color: #fff;
+                font-weight: 500;
+                margin-left: 40px;
+                transition: .5s;
+            }
+            .nav-links .btnLogin-popup:hover{
+                background: burlywood;
+                color: #fff;
+            }
 
         </style> 
 
-    </body></html>
+    </body>
+</html>
