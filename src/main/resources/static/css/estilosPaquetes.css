@@ -153,7 +153,7 @@ nav img{
 
 }
 .tours-box{
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -202,7 +202,10 @@ hr{
     width: 60%;
 }
 .tours-description p{
-    font-size: 14px;
+    font-size: 13px;
+    padding: 0 10px;
+    text-align: initial;
+    color: #fff;
 }
 .single-tours:hover .tours-description{
     bottom: 40%;

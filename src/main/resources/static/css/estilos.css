@@ -137,6 +137,35 @@ nav img{
 .hero-btn:hover span{
     width: 100%;
 }
+#feature{
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(#162c4f,#20485e);
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 20px;
+}
+.feature-box p{
+    padding: 0 100px;
+    text-align: initial;
+    color: #fff;
+}
 /*--Conservacion y Sustentabilidad--*/
 .content-sau{
     height: 60vh;
@@ -167,6 +196,7 @@ nav img{
     font-size: 16px;
     color: #fff;
     padding: 0 15px;
+    text-align: initial;
 }
 h1{
     font-size: 36px;
@@ -193,7 +223,11 @@ h2{
     align-items: center;
     padding: 30px;
     color: #fff;
-
+}
+.text-box{
+    padding: 0 100px;
+    text-align: initial;
+    color: #fff;
 }
 /*--Galeria--*/
 .content-photos{
@@ -205,6 +239,7 @@ h2{
     padding: 30px;
     background: linear-gradient(#162c4f,#20485e);
 }
+
 /*--Horario--*/
 .content-service{
     height: 60vh;
@@ -230,12 +265,14 @@ h2{
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0,0,0,.3);
     margin: 40px;
+    
 }
 .content-service .box-container p{
     margin-bottom: 20px;
     font-size: 14px;
     color: #fff;
     padding: 0 15px;
+    text-align: center;
 }
 .content-service p{
     color: #fff;
@@ -269,6 +306,7 @@ h3{
 }
 .footer-row h2{
     margin: 10px 0;
+    font-size: 1.5em;
 }
 .footer-row p{
     line-height: 35px;
@@ -278,6 +316,10 @@ h3{
     position: absolute;
     top: 10%;
     left: 10%;
+}
+.title-text p{
+   font-size: 30px;
+   color: #afbfae;
 }
 nav{
     display: flex;

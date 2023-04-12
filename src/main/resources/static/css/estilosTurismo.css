@@ -81,14 +81,15 @@ nav img{
     position: relative;
     z-index: 1;
     display: inline-block;
+    
 }
 .title-text p2{
     margin: auto;
     font-size: 20px;
-    color: #afbfae;
     position: relative;
-    padding: 0 20px;
+    padding: 90px 35px;
     text-align: initial;
+    color: #fff;
 
 }
 .title-text h1{
@@ -218,6 +219,9 @@ hr{
 }
 .tours-description p{
     font-size: 14px;
+    padding: 0 20px;
+    text-align: initial;
+    color: #fff;
 }
 .single-tours:hover .tours-description{
     bottom: 40%;
