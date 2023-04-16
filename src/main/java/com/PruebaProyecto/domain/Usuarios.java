@@ -33,6 +33,4 @@ public class Usuarios implements Serializable {
         this.email = email;
         this.contraseña = contraseña;
     }
-    
-    
 }

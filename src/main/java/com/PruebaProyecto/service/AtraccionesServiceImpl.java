@@ -1,13 +1,46 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.PruebaProyecto.service;
+
+import com.PruebaProyecto.dao.AtraccionesDao;
+import com.PruebaProyecto.domain.Atracciones;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author 0116960839$
  */
-public class AtraccionesServiceImpl {
+
+@Service
+public class AtraccionesServiceImpl implements AtraccionesService{
+    
+    @Autowired
+    AtraccionesDao atraccionDao;
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Atracciones> getAtracciones() {
+        return (List<Atracciones>) atraccionDao.findAll();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Atracciones getAtracciones(Atracciones atracciones) {
+        return atraccionDao.findById(atracciones.getIdAtracciones()).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public void save(Atracciones atracciones) {
+        atraccionDao.save(atracciones);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Atracciones atracciones) {
+        atraccionDao.deleteById(atracciones.getIdAtracciones());
+    }
     
 }

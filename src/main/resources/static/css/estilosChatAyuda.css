@@ -1,0 +1,74 @@
+
+/* 
+    Created on : Apr 16, 2023, 2:22:59 PM
+    Author     : mariafernandamiranda
+*/
+
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: none;
+}
+
+/* Estilos para el encabezado del chat */
+.header {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para el cuerpo del chat */
+.body {
+  height: 75%;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+/* Estilos para el pie de página del chat */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Estilos para el botón de enviar */
+.send-btn {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de cerrar */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Variables CSS */
+:root {
+  --color-primary: #4285f4;
+  --color-secondary: #fff;
+  --border-color: #ccc;
+  --box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  --padding: 10px;
+  --border-radius: 5px;
+  --button-padding: 8px 15px;
+}
+

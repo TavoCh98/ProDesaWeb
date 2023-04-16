@@ -12,7 +12,5 @@ public interface UsuariosService {
     
     public void save(Usuarios usuarios);
     
-    public void delete (Usuarios usuarios);
-    
-    
+    public void delete (Usuarios usuarios);  
 }

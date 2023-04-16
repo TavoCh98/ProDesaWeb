@@ -36,5 +36,4 @@ public class UsuariosServiceImpl implements UsuariosService {
     public void delete(Usuarios usuarios) {
         usuarioDao.deleteById(usuarios.getIdUsuarios());
     }
-
 }
