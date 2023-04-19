@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #06361b, #243b55);
+    padding-bottom: 70px;
+}
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container form .row .col{
+    flex: 1 1 250px;
+}
+.container form .row .col .title{
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .row .col .input-box{
+    margin: 15px 0;
+}
+.container form .row .col .input-box span{
+    margin-bottom: 10px;
+    display: block;
+    color: #fff;
+}
+.container form .row .col .input-box input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 5px;
+}
+.container form .row .col .input-box input:focus{
+    border: 1px solid #000;
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.container form .row .col .flex .input-box{
+    margin-top: 5px;
+}
+.container form .row .col .input-box img{
+    width: 255px;
+    height: 40px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+.container form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #55735e;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.container a:hover{
+    background: #55735e;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #55735e,
+        0 0 25px #55735e,
+        0 0 50px #55735e,
+        0 0 100px #55735e;
+}
+
+.container a span{
+    position: absolute;
+    display: block;
+}
+
+.container a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#55735e);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.container a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#55735e);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0%{
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.container a span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#55735e);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3{
+    0%{
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.container a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(270deg, transparent,#55735e);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
