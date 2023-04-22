@@ -8,10 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- *
- * @author 0116960839$
- */
 
 @Service
 public class AtraccionesServiceImpl implements AtraccionesService{
@@ -27,7 +23,7 @@ public class AtraccionesServiceImpl implements AtraccionesService{
 
     @Override
     @Transactional(readOnly = true)
-    public Atracciones getAtracciones(Atracciones atracciones) {
+    public Atracciones getAtraccion(Atracciones atracciones) {
         return atraccionDao.findById(atracciones.getIdAtracciones()).orElse(null);
     }
 
@@ -42,5 +38,4 @@ public class AtraccionesServiceImpl implements AtraccionesService{
     public void delete(Atracciones atracciones) {
         atraccionDao.deleteById(atracciones.getIdAtracciones());
     }
-    
 }

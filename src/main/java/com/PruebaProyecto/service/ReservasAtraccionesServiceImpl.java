@@ -2,18 +2,12 @@
 package com.PruebaProyecto.service;
 
 import com.PruebaProyecto.dao.ReservasAtraccionesDao;
-import com.PruebaProyecto.dao.ReservasDao;
-import com.PruebaProyecto.domain.Reservas;
 import com.PruebaProyecto.domain.ReservasAtracciones;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- *
- * @author 0116960839$
- */
 
 @Service
 public class ReservasAtraccionesServiceImpl implements ReservasAtraccionesService{

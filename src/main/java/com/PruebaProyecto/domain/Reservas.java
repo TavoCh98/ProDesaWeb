@@ -1,10 +1,6 @@
-
 package com.PruebaProyecto.domain;
 
-/**
- *
- * @author 0116960839$
- */
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -33,4 +29,3 @@ public class Reservas implements Serializable {
      
     }
 }
-

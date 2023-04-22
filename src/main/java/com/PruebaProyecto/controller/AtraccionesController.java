@@ -2,7 +2,6 @@
 package com.PruebaProyecto.controller;
 
 import com.PruebaProyecto.domain.Atracciones;
-import com.PruebaProyecto.domain.Atracciones;
 import com.PruebaProyecto.service.AtraccionesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,10 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-/**
- *
- * @author 0116960839$
- */
 
 @Controller
 public class AtraccionesController {
@@ -43,7 +38,7 @@ public class AtraccionesController {
     @GetMapping("/atraccion/modificar/{idAtraccion}")
     
     public String modificarAtraccion(Atracciones atracciones, Model model) {
-        atracciones = atraccionesService.getAtracciones(atracciones);
+        atracciones = atraccionesService.getAtraccion(atracciones);
         model.addAttribute("atracciones", atracciones);
         return "/atraccion/modificar";
     }

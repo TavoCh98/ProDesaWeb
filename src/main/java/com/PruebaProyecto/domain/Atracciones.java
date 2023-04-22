@@ -1,10 +1,6 @@
-
 package com.PruebaProyecto.domain;
 
-/**
- *
- * @author 0116960839$
- */
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,21 +11,26 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table (name="atracciones")
+@Table(name = "atracciones")
 public class Atracciones implements Serializable {
-    
-     private static final long serialVersionUID = 1L;
-    
+
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_atracciones")
     private Long idAtracciones;
-
+    private String nombre;
+    private String descripcion;
+    private double costo;
 
     public Atracciones() {
     }
 
-    public Atracciones(Long idAtracciones) {
+    public Atracciones(Long idAtracciones, String nombre, String descripcion, double costo) {
         this.idAtracciones = idAtracciones;
-     
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.costo = costo;
     }
 }
