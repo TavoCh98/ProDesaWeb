@@ -23,14 +23,6 @@ public class ReservasAtracciones implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_reservas_atracciones")
     private Long idReservasAtracciones;
-    
-    @JoinColumn(name="id_atracciones", referencedColumnName = "id_atracciones")
-    @ManyToOne
-    private Atracciones atracciones;
-    
-    @JoinColumn(name="id_reservas", referencedColumnName = "id_reservas")
-    @ManyToOne
-    private Reservas reservas;
 
     public ReservasAtracciones() {
     }
