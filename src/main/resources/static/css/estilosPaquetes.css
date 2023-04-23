@@ -184,7 +184,7 @@ nav img{
 }
 .single-tours:hover .overlay{
     opacity: 1;
-}
+}*
 .tours-description{
     width: 80%;
     position: absolute;
@@ -208,7 +208,6 @@ hr{
     color: #fff;
 }
 .single-tours:hover .tours-description{
-    bottom: 40%;
     opacity: 1;
 }
 @media screen and(max-width: 770px){
