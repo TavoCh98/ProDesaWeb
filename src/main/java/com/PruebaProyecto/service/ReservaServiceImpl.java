@@ -1,10 +1,7 @@
 
 package com.PruebaProyecto.service;
 
-/**
- *
- * @author 0116960839$
- */
+
 
 import com.PruebaProyecto.domain.Reserva;
 import java.util.List;
@@ -34,13 +31,13 @@ public class ReservaServiceImpl implements ReservaService {
     @Override
     @Transactional
     public void delete(Reserva reserva) {
-        reservaDao.deleteById(reserva.getIdReservas());
+        reservaDao.deleteById(reserva.getIdReserva());
     }
 
    
     @Override
     @Transactional(readOnly = true)
     public Reserva getReserva(Reserva reserva) {
-        return reservaDao.findById(reserva.getIdReservas()).orElse(null);
+        return reservaDao.findById(reserva.getIdReserva()).orElse(null);
     }
 }
