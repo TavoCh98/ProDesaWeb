@@ -1,5 +1,6 @@
 package com.PruebaProyecto.domain;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,10 +15,12 @@ import lombok.Data;
 public class Usuario implements Serializable {
     
      private static final long serialVersionUID = 1L;
-    
+     
+     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idUsuarios;
+    @Column (name="id_usuarios")
+    private Long idUsuario;
     public String nombre;
     public String apellidos;
     public String email;
@@ -26,8 +29,8 @@ public class Usuario implements Serializable {
     public Usuario() {
     }
 
-    public Usuario(Long idUsuarios, String nombre, String apellidos, String email, String contraseña) {
-        this.idUsuarios = idUsuarios;
+    public Usuario(Long idUsuario, String nombre, String apellidos, String email, String contraseña) {
+        this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.email = email;
