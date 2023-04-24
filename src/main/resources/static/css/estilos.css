@@ -110,33 +110,6 @@ nav img{
 .content-header .text-box img{
     width: 300px;
 }
-.hero-btn{
-    margin: 0 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid burlywood;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.hero-btn span{
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: burlywood;
-    z-index: -1;
-    transition: 0.5s;
-}
-.hero-btn:hover span{
-    width: 100%;
-}
 #feature{
     width: 100%;
     padding: 70px 0;
@@ -231,15 +204,70 @@ h2{
 }
 /*--Galeria--*/
 .content-photos{
+    max-width: 1000px;
     height: 60vh;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 30px 500px;
     background: linear-gradient(#162c4f,#20485e);
 }
-
+input[type=radio]{
+    display: none;
+}
+.content-photo{
+    max-width: 800px;
+    width: 400%;
+    max-height: 600px;
+    height: 400px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.content-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0%) scale(1);
+    z-index: 1;
+}
 /*--Horario--*/
 .content-service{
     height: 60vh;

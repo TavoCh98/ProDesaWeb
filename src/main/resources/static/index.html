@@ -103,17 +103,22 @@
         <section class="content-photos">
             <br/>
             <h2>Galería de Imágenes</h2>
-            <img src="images/guariaMorada.jpg">
-            <img src="images/basilisco.jpg">
-            <img src="images/ixora.jpg">
-            <img src="images/lapa.jpg">
-            <img src="images/lantana.jpg">
-            <img src="images/osoPerezoso.jpg">
-            <img src="images/caladio.jpg">
-            <img src="images/monoCaraBlanca.jpg">
-            <img src="images/florDeLaPasion.jpg">
-            <img src="images/tití.jpg">
-            <img src="images/arbolGuanacaste.jpg">
+            <div class="content-photo">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="selector-1">
+                        <img src="images/guariaMorada.jpg">
+                    </label>
+                    <label class="card" for="item-2" id="selector-2">
+                        <img src="images/monoCaraBlanca.jpg">
+                    </label>
+                    <label class="card" for="item-3" id="selector-3">
+                        <img src="images/arbolGuanacaste.jpg">
+                    </label>
+                </div>
+            </div>
         </section>
         <!--Horario-->
         <section class="content-service ">
@@ -166,7 +171,7 @@
                         <li><a href="infoPersonal.html">INFORMACIÓN</a></li>
                         <li><a href="inicioSesion.html">INICIO SESIÓN</a></li>
                         <li><a href="reservar.html">RESERVACIÓN</a></li>
-                        <li><a href="">CHAT DE AYUDA</a></li>
+                        <li><a href="chatAyuda.html">CHAT DE AYUDA</a></li>
                     </ul>
                 </div>
             </nav>
