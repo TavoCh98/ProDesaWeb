@@ -1,9 +1,138 @@
 
-/* 
-    Created on : Apr 16, 2023, 2:22:59 PM
-    Author     : mariafernandamiranda
-*/
 
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/banner5.jpg);
+    background-size: cover;
+
+}
+.contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.contenedor form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #55735e;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    width: 35%;
+    text-align: center;
+}
+.contenedor a:hover{
+    background: #55735e;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #55735e,
+        0 0 25px #55735e,
+        0 0 50px #55735e,
+        0 0 100px #55735e;
+}
+
+.contenedor a span{
+    position: absolute;
+    display: block;
+}
+
+.contenedor a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#55735e);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.contenedor a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#55735e);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0%{
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.contenedor a span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#55735e);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3{
+    0%{
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.contenedor a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(270deg, transparent,#55735e);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+.head{
+    min-height: 100vh;
+    width: 100%;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -52,81 +181,12 @@ nav img{
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: greenyellow;
+    color: #fff;
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
 }
 .nav-links .btnLogin-popup:hover{
     background: burlywood;
-    color: green;
+    color: #fff;
 }
-
-.container {
-  position: fixed;
-  bottom: 0;
-  right: 30px;
-  width: 300px;
-  height: 400px;
-  background-color: background;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  display: none;
-}
-
-/* Estilos para el encabezado del chat */
-.header {
-  background-color: #4285f4;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Estilos para el cuerpo del chat */
-.body {
-  height: 75%;
-  overflow-y: scroll;
-  padding: 10px;
-}
-
-/* Estilos para el pie de página del chat */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-/* Estilos para el botón de enviar */
-.send-btn {
-  background-color: #4285f4;
-  color: green;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Estilos para el botón de cerrar */
-.close-btn {
-  background-color: transparent;
-  border: none;
-  color: green;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Variables CSS */
-:root {
-  --color-primary: #4285f4;
-  --color-secondary: #fff;
-  --border-color: #ccc;
-  --box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-  --padding: 10px;
-  --border-radius: 5px;
-  --button-padding: 8px 15px;
-}
-
