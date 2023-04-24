@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "atracciones")
-public class Atracciones implements Serializable {
+public class Atraccion implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -24,10 +24,10 @@ public class Atracciones implements Serializable {
     private String descripcion;
     private double costo;
 
-    public Atracciones() {
+    public Atraccion() {
     }
 
-    public Atracciones(Long idAtracciones, String nombre, String descripcion, double costo) {
+    public Atraccion(Long idAtracciones, String nombre, String descripcion, double costo) {
         this.idAtracciones = idAtracciones;
         this.nombre = nombre;
         this.descripcion = descripcion;

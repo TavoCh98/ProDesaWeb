@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proceso Reserva</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilosReserva.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="head">
+            <nav>
+                <a href="index.html"><img src="Images/logo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="turismo.html">TOUR</a></li>
+                        <li><a href="paquetesTurismo.html">PAQUETES DE TURISMO</a></li>
+                        <li><a href="infoPersonal.html">INFORMACIÓN</a></li>
+                        <li><a href="inicioSesion.html">INICIO SESIÓN</a></li>
+                        <li><a href="reservar.html">RESERVACIÓN</a></li>
+                        <li><a href="">CHAT DE AYUDA</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="contenedor">
+            <h2>Reservar</h2>
+            <form action="">
+                <div class="usuario">
+                    <input type="text" name="tour" value="Reserva 1 Día" style="display: none">
+                    <p style="color: #fff">Nombre<span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="nombre" placeholder="XXXXXXX">
+                    </div>
+                    <p style="color: #fff">Teléfono</p>
+                        <input class="form-control" type="text" name="tel" placeholder="8888-0000">
+                    <p style="color: #fff">Cantidad de personas</p>
+                    <div class="form-group">
+                        <input class="form-control" type="number" name="personas" min="2" placeholder="Mínimo de 2 personas">
+                    </div>
+                </div>
+                <div class="usuario">
+                    <p style="color: #fff">Fecha <span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="date" name="fecha" required="">
+                    </div>
+                    <p style="color: #fff">Correo electrónico <span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" placeholder="ejemplo@ejemplo.com">
+                    </div>
+                    <p style="color: #fff">Confirmar correo electrónico <span style="color: red">*</span></p>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="repetir_email" placeholder="ejemplo@ejemplo.com">
+                    </div>
+                    <a href="realizarPago.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Reservar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>    
+  
+
+

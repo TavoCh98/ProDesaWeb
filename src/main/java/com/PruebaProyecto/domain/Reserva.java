@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table (name="reservas")
-public class Reservas implements Serializable {
+public class Reserva implements Serializable {
     
      private static final long serialVersionUID = 1L;
     
@@ -21,10 +21,10 @@ public class Reservas implements Serializable {
     private Long idReservas;
 
 
-    public Reservas() {
+    public Reserva() {
     }
 
-    public Reservas(Long idReservas) {
+    public Reserva(Long idReservas) {
         this.idReservas = idReservas;
      
     }

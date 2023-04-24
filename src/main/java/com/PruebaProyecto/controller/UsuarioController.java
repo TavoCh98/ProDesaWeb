@@ -1,18 +1,18 @@
 package com.PruebaProyecto.controller;
 
-import com.PruebaProyecto.domain.Usuarios;
+import com.PruebaProyecto.domain.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import com.PruebaProyecto.service.UsuariosService;
+import com.PruebaProyecto.service.UsuarioService;
 
 @Controller
-public class UsuariosController {
+public class UsuarioController {
     
     @Autowired
-    UsuariosService usuarioService;
+    UsuarioService usuarioService;
     
     @GetMapping("/usuarios/lista")
     public String inicio(Model model) {
@@ -23,26 +23,26 @@ public class UsuariosController {
     }
 
     @GetMapping("/usuario/nuevo")
-    public String nuevoUsuario(Usuarios usuarios) {
+    public String nuevoUsuario(Usuario usuarios) {
         return "/usuario/modificar";
     }
 
     @PostMapping("/usuario/salvar")
-    public String salvarUsuario(Usuarios usuarios) {
+    public String salvarUsuario(Usuario usuarios) {
         usuarioService.save(usuarios);
         return "redirect:/usuarios/lista";
     }
     
     @GetMapping("/cliente/modificar/{idCliente}")
     
-    public String modificarUsuario(Usuarios usuarios, Model model) {
-        usuarios = usuarioService.getUsuarios(usuarios);
-        model.addAttribute("usuarios", usuarios);
+    public String modificarUsuario(Usuario usuario, Model model) {
+        usuario = usuarioService.getUsuario(usuario);
+        model.addAttribute("usuarios", usuario);
         return "/usuario/modificar";
     }
 
     @GetMapping("/usuario/eliminar/{idUsuarios}")
-    public String eliminarUsuario(Usuarios usuarios) {
+    public String eliminarUsuario(Usuario usuarios) {
         usuarioService.delete(usuarios);
         return "redirect:/usuarios/lista";
     }
