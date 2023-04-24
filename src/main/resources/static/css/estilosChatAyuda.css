@@ -6,7 +6,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/banner5.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/banner.jpg);
     background-size: cover;
 
 }
