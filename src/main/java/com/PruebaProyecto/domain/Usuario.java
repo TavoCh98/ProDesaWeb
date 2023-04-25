@@ -20,20 +20,22 @@ public class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name="id_usuarios")
-    private Long idUsuario;
+    private Long idUsuarios;
     public String nombre;
-    public String apellidos;
     public String email;
-    public String contraseña;
+    public String contrasena;
+    public String rol;
 
     public Usuario() {
     }
 
-    public Usuario(Long idUsuario, String nombre, String apellidos, String email, String contraseña) {
-        this.idUsuario = idUsuario;
+    public Usuario(Long idUsuarios, String nombre, String email, String contrasena, String rol) {
+        this.idUsuarios = idUsuarios;
         this.nombre = nombre;
-        this.apellidos = apellidos;
         this.email = email;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
+        this.rol = rol;
     }
+
+   
 }

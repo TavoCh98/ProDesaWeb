@@ -14,23 +14,38 @@ public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;
     
-    @GetMapping("/usuarios/lista")
+    @PostMapping("/usuarios/inicioSesion")
     public String inicio(Model model) {
 
-        var usuarios = usuarioService.getUsuarios();
-        model.addAttribute("usuarios", usuarios);
-        return "/usuarios/lista";
+        var usuario = usuarioService.getUsuarios();
+        model.addAttribute("usuario", usuario);
+        
+        return "/usuarios/inicioSesion";
     }
 
     @GetMapping("/usuario/nuevo")
     public String nuevoUsuario(Usuario usuarios) {
         return "/usuario/modificar";
     }
+   
 
-    @PostMapping("/usuario/salvar")
-    public String salvarUsuario(Usuario usuarios) {
-        usuarioService.save(usuarios);
-        return "redirect:/usuarios/lista";
+    @PostMapping("/usuario/login")
+    public String salvarUsuario(String email,String contrasena) {
+        System.out.println(email);
+        System.out.println(contrasena);
+        Boolean exitos=false;
+        var usuario = usuarioService.getUsuarios();
+        for (Usuario us : usuario) {
+            if(us.email.equals(email)&&us.contrasena.equals(contrasena)){
+                exitos=true;
+                break;
+            }
+        }
+        if (exitos) {
+            return "redirect:/";
+        }
+        return "redirect:/";  // aqui hay que redirigir a una pagina que diga que los datos no son validos
+        //o bien que se recargue la pagina nada mas que no lo deje ir a otro lado 
     }
     
     @GetMapping("/cliente/modificar/{idCliente}")
