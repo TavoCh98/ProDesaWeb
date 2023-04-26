@@ -63,7 +63,7 @@ body{
 
 }
 
-.contenedor form a,button {
+.contenedor form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -90,13 +90,13 @@ body{
 
 }
 
-.contenedor a,button span{
+.contenedor a span{
     position: absolute;
     display: block;
 
 }
 
-.contenedor a,button span:nth-child(1){
+.contenedor a span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
@@ -113,7 +113,7 @@ body{
     }
 }
 
-.contenedor a,button span:nth-child(2){
+.contenedor a span:nth-child(2){
     top: -100%;
     right: 0;
     width: 2px;
@@ -131,7 +131,7 @@ body{
     }
 }
 
-.contenedor a,button span:nth-child(3){
+.contenedor a span:nth-child(3){
     right: -100%;
     bottom: 0;
     width: 100%;
@@ -149,7 +149,7 @@ body{
     }
 }
 
-.contenedor a,button span:nth-child(4){
+.contenedor a span:nth-child(4){
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -227,5 +227,3 @@ nav img{
     background: burlywood;
     color: #fff;
 }
-
-
