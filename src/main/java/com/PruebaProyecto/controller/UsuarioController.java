@@ -44,8 +44,7 @@ public class UsuarioController {
         if (exitos) {
             return "redirect:/";
         }
-        return "redirect:/";  // aqui hay que redirigir a una pagina que diga que los datos no son validos
-        //o bien que se recargue la pagina nada mas que no lo deje ir a otro lado 
+        return "redirect:/";
     }
     
     @GetMapping("/cliente/modificar/{idCliente}")
